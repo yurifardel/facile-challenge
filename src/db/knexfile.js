@@ -6,8 +6,10 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'facile',
-      user:     'postgres',
-      password: 'Adolfo97',
+      host : '127.0.0.1',
+      port : 5432,
+      user: 'postgres',
+      password: '<password>',
       idleTimeoutMillis: 30000
     },
     pool: {
