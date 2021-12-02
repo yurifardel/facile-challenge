@@ -2,7 +2,7 @@
 - Feito em Node.js, com express, utilizando o banco de dados PostgreSQL usando Knex.js para connectar e construir, Cryptr para criptografar e descriptografar dados e nodemon para monitorar o sistema.
 
 # Execução
-- npm start
+- npm dev
 
 # Instalação
 - Express: npm i express
