@@ -1,15 +1,14 @@
 // Update with your config settings.
 
 module.exports = {
-
   development: {
-    client: 'postgresql',
+    client: 'pg',
     connection: {
-      database: 'facile',
       host : '127.0.0.1',
       port : 5432,
       user: 'postgres',
       password: 'Adolfo97',
+      database: 'facile',
       idleTimeoutMillis: 30000
     },
     pool: {
