@@ -9,6 +9,8 @@ module.exports = {
       user: 'postgres',
       password: 'Adolfo97',
       database: 'facile',
+      dialect: "postgres",
+      operatorsAliases: false,
       idleTimeoutMillis: 30000
     },
     pool: {
@@ -19,5 +21,9 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   },
+  production: {
+    dialect: "postgres",
+    operatorsAliases: false
+  }
 
 }
