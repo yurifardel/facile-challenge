@@ -41,8 +41,8 @@ route.get('/encripts/:_id', async (req, res) => {
   
     return res.json({id: query.id, encripted_name: decrypt})
   } catch (error) {
-    // console.log(error)
-    throw Error("unauthorized")
+    console.log(error)
+    // throw Error("unauthorized")
 
   }
  
