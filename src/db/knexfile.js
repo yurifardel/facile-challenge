@@ -1,15 +1,16 @@
 // Update with your config settings.
+require("dotenv").config()
 
 module.exports = {
   development: {
-    client: 'pg',
+    client: process.env.DB_CLIENT,
     connection: {
-      host : '127.0.0.1',
-      port : 5432,
-      user: 'postgres',
-      password: 'Adolfo97',
-      database: 'facile',
-      dialect: "postgres",
+      host : process.env.DB_HOST,
+      port :  process.env.DB_PORT,
+      user:  process.env.DB_USER,
+      password:  process.env.DB_PASSWORD,
+      database:  process.env.DB_DATABASE,
+      dialect:  process.env.DB_DIALECT,
       operatorsAliases: false,
       idleTimeoutMillis: 30000
     },
@@ -21,18 +22,4 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   },
-  production: {
-    client: 'pg',
-    connection: {
-      host : '127.0.0.1',
-      port : 5432,
-      user: 'postgres',
-      password: 'Adolfo97',
-      database: 'facile',
-      dialect: "postgres",
-      operatorsAliases: false,
-      idleTimeoutMillis: 30000
-    },
-  }
-
 }
