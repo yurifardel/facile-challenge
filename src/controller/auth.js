@@ -27,8 +27,8 @@ route.post("/encripts", async (req, res) => {
     return res.json({ id, encripted_name});
 
   } catch (error) {
-    console.log(error)
-    // throw Error("unauthorized")
+    // console.log(error)
+    throw Error("unauthorized")
   }
 });
 
@@ -41,8 +41,8 @@ route.get('/encripts/:_id', async (req, res) => {
   
     return res.json({id: query.id, encripted_name: decrypt})
   } catch (error) {
-    console.log(error)
-    // throw Error("unauthorized")
+    // console.log(error)
+    throw Error("unauthorized")
 
   }
  
